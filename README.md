@@ -1,3 +1,39 @@
+# Handwritten Digit Recognition Neural Network
+
+This project implements a fully functional feedforward neural network in Python for classifying handwritten digits (0–9) using the MNIST dataset format. The implementation is done from scratch using only NumPy, and includes both training and testing pipelines. No external machine learning libraries are used.
+
+The goal is to provide an educational, lightweight, and interpretable neural network system that handles image preprocessing and training.
+
+---
+
+## File Structure
+
+- `Network.py`:  
+  Base class providing common utility methods such as `ReLU`, `Sigmoid`, and `Softmax` functions. Shared between training and testing components.
+
+- `TrainingNetwork.py`:  
+  Builds and trains a neural network with custom architecture using a directory of labeled images. Handles forward/backward propagation, data preprocessing, and gradient descent.
+
+- `TestingNetwork.py`:  
+  Loads a single image, accepts the weights/biases from a trained model, and performs a forward pass to predict the digit class.
+
+- `MNIST/`:  
+  Contains training subfolders (`/training/0`, `/training/1`, etc.) and a `/singleTest` folder with one test image. All images should be 28×28 pixels and grayscale.
+
+---
+
+## Requirements
+
+- Python 3.8+
+- NumPy
+- Pillow (`PIL`)
+- colorama (for training progress output)
+
+Install dependencies via:
+
+```bash
+pip install numpy pillow colorama
+```
  # Example Output
 
  This is an example of the output from `UsageExamples.py`:
