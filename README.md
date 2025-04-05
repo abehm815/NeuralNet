@@ -44,5 +44,6 @@ Label: test.png
 ```
 In this example the test image looked like:
 
+![Alt text](MNIST/singleTest/test.png)
 
-
+And the network correctly identified it as a `0`
