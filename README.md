@@ -36,8 +36,13 @@ Training Progress:
 Once complete:
 ```
 Final Accuracy: 93.14%
+```
+Then the testing network takes in the calculated weights and biases of the training network and does one forward propogation to guess the digit contained in the image under `MNIST\singleTest` and prints out the filename of the image contained within.
+```
 Network's Guess: 0
 Label: test.png
 ```
+In this example the test image looked like:
+
 
 
